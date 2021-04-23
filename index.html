@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio-Priyanka Sarkar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Priyanka Paramita<br>Sarkar</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About me</a> 
+    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Projects</a> 
+    <a href="#experience" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Experience</a> 
+    <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Skills</a> 
+    <a href="#resume" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Resume</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Priyanka Paramita Sarkar</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="projects">
+    <h1 class="w3-jumbo"><b>FullStack Web Developer</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>About Me</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+<p>Hello, my name is Priyanka Paramita Sarkar.Primarily interested in Web Development.<br>I love exploring new things.</p>
+<p>Feel free to take a look at my recent projects at project section.</p>
+<p>You can stop by at <a href="https://www.gmail.com/">priyankapsarkar10@gmail.com</a></p>
+
+  </div>
+  
+  
+
+  <!-- Projects -->
+
+  <div class="w3-container" id="experience" style="margin-top:80px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Projects</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+<!-- Photo grid (modal) Projects -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="expat.jpg" style="width:100%" onclick="onClick(document.location='https://xpatjournal.netlify.app/')" alt="Expat Journal">
+      <img src="plants.jpg" style="width:100% " onclick="onClick(document.location='https://web-sprint-challenge-advanced-react-nine.vercel.app/')" alt="Plants App">
+      
+    </div>
+
+    <div class="w3-half">
+      <img src="howto.jpg" style="width:100%" onclick="onClick(document.location='https://how-to-171-lambda.netlify.app/')" alt="How To App">
+     <img src="pokemon.jpg" style="width:100%" onclick="onClick(document.location='https://react-redux-app-orpin-six.vercel.app/')" alt="Pokemon">
+     <!-- <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>-->
+
+  </div>
+
+  <!-- Modal for full size images on click-->
+  
+
+
+<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption">
+An app designed to see photos laid out in a grid. Users can create, read, update and delete stories and photos.
+
+
+</p>
+
+    </div>
+
+
+  
+
+
+
+  </div>
+    </div>
+  </div>
+  
+  <!-- Experience -->
+  <div class="w3-container" id="skills" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Experience</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+<!--<p>Experienced in developing front end website architecture.<br>
+    Designed user interactions on web pages.<br>
+Developed back-end website applications.<br>
+Created servers and databases for functionality.<br>
+Ensured responsiveness of applications.<br>
+Designed and developed APIs.<br>
+Meeting both technical and consumer needs.<br>
+</p>--!>
+
+<h4>Expat Journal	</h4><button onClick=(document.location="https://github.com/The-Expat-Journal")>View Details</button>
+<p>•	Developed web-app using React, Redux, HTML5/CSS3 that provides a professional platform for expats to share their experiences globally.<br>
+•	Worked across the software development cycle to gather user requirements and build and maintain the code, which allows users to post descriptions and stories about their travels.<br>
+•	Ensure application successfully establish connection between frontend and backend.
+</p>
+
+
+<h4>How-To App	</h4><button onClick=(document.location="https://github.com/HowTo-171")>View Details</button>
+<p>•	Works as a website guide to complete a task.<br>
+•	Ensure applications security and ability to interact with multiple APIs and databases.<br>
+•	Responsible for API design and development of RESTful services.
+</p>
+
+
+<h4>Plant Shop	</h4><button onClick=(document.location="https://github.com/priyanka10it/web-sprint-challenge-advanced-react/tree/Priyanka-Sarkar")>View Details</button>
+<p>•	Use my extensive experience with front end development to define the structure and components for the project, making sure they’re reusable.<br>
+•	Responsible for the implementation of Web Design based on CSS3, HTML5, Bootstrap, React JS.<br>
+•	Implemented React Js to create a dynamically changing website.
+
+</p>
+
+
+<h4>Pokemon Shop	</h4><button onClick=(document.location="https://github.com/priyanka10it/React-Redux-App/tree/Priyanka-Sarkar")>View Details</button>
+<p>•		Fetched data inside an async action creator from an API.<br>
+•		Added the data from the API to the Redux store.<br>
+•		Displayed the data from the store in a component.<br>
+•	Used HTML, CSS, Bootstrap to style the app.
+
+</p>
+    
+
+  </div>
+
+  
+
+  <!-- Skills-->
+  <div class="w3-container" id="packages" style="margin-top:50px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Skills</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+      </div>
+
+
+
+<div class="w3-row-padding">
+     
+
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Frontend</li>
+        <li class="w3-padding-16">HTML5</li>
+        <li class="w3-padding-16">CSS3</li>
+        <li class="w3-padding-16">JAVASCRIPT</li>
+        <li class="w3-padding-16">REACT</li>
+        <li class="w3-padding-16">REDUX</li>
+     
+      </ul>
+    </div>
+
+<div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Backend</li>
+        <li class="w3-padding-16">Node</li>
+        <li class="w3-padding-16">Express</li>
+        <li class="w3-padding-16">Knex</li>
+        <li class="w3-padding-16">SQLite3</li>
+        <li class="w3-padding-16">REST API Services</li>
+        <!--<li class="w3-padding-16">
+          <h2>$ 199</h2>
+          <span class="w3-opacity">per room</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+        </li>-->
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Resume -->
+  <div class="w3-container" id="resume" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Resume</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    
+    <h4>Please click on <a href="Resume.docx">Resume</a> Link</h4>
+  </div>
+
+<!-- End page content -->
+</div>
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
